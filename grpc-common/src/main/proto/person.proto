@@ -1,0 +1,18 @@
+//对象定义文件
+syntax="proto3";
+package com.zy.grpc.common.protobuf;
+option java_outer_classname="PersonProbuf";
+
+message Person {  
+    string username=1;  
+    int32 age=2;  
+    string sex=3;  
+}  
+  
+message Req {  
+    string username=1;  
+}  
+  
+message Resp {  
+    Person person=1;  
+} 

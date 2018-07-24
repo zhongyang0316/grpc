@@ -1,0 +1,8 @@
+//服务定义文件
+syntax="proto3";  
+package com.zy.grpc.common.protobuf;
+import "person.proto";  
+  
+service UserService {  
+    rpc query(Req) returns (Resp) {}  
+}
